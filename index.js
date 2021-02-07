@@ -8,21 +8,6 @@ function collectionToArray(htmlCollection) {
 
 class SubRecord {
 
-	/**
-	 * @type {string}
-	 */
-	kcode;
-	
-	/**
-	 * @type {string}
-	 */
-	type;
-
-	/**
-	 * @type {string}
-	 */
-	fill;
-
 	constructor(kcode,type,fill) {
 		this.kcode = kcode;
 		this.type = type;
@@ -221,8 +206,9 @@ class Scanner {
 		this.run = true;
 		while(this.run) {
 			for(let i = 0; i < selectedCourseLinks.length && this.run; ++i) {
-				if(await this.__PRIVATE_DONT_CALL_ME_scanCourse(selectedCourseLinks[i]))
+				if(await this.__PRIVATE_DONT_CALL_ME_scanCourse(selectedCourseLinks[i])) {
 					return;
+				}
 				await this.sleep(this.interval);
 			}
 		}
