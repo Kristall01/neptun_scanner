@@ -215,7 +215,3 @@ class Scanner {
 	}
 
 }
-
-window.Scanner = scanner;
-window.collectionToArray = collectionToArray;
-window.SubRecord = SubRecord;
