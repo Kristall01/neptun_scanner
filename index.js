@@ -230,5 +230,6 @@ class Scanner {
 
 }
 
-let s = new Scanner(300);
-s.scan(['IP-18KVISZWPROGEG', 'IP-18KVIHJEG','IP-18KVIKWPROGEG']);
+window.Scanner = scanner;
+window.collectionToArray = collectionToArray;
+window.SubRecord = SubRecord;
