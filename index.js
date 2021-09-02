@@ -19,7 +19,7 @@ class SubRecord {
 class Scanner {
 
 	constructor(timings = 500) {
-		this.audio = new Audio("https://proxy.notificationsounds.com/message-tones/moonless-591/download/file-sounds-1138-moonless.mp3");
+		this.audio = new Audio("https://freesound.org/data/previews/122/122255_1074082-lq.mp3");
 		this.run = false;
 		this.fake = false;
 		this.setInterval(timings);
